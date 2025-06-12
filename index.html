@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="./CSS/login.css">
+</head>
+<body>
+  <h1 class="logo">Rick & <span>Morty</span></h1>
+  <div class="contenedor">
+    <div class="formulario inicio mostrar">
+      <form class="formularioInicioDeSesion" id="formularioInicioDeSesion">
+        <h2>Inicio de Sesión</h2>
+        <span class="mensaje">Introduzca su correo y su contraseña</span>
+        <div class="iconoYTexto" id="grupo1">
+          <ion-icon name="mail"></ion-icon>
+          <input class="input" type="text" name="email" id="email" placeholder="Email" required autofocus>
+          <img class="check noVisible" src="./svg/check.svg" alt="check">
+          <img class="nocheck noVisible" src="./svg/noCheck.svg" alt="nocheck">
+        </div>
+        <p class="aviso avisoEmailFormato noVisible">El Email tiene no tiene un formato correcto</p>
+        <p class="aviso avisoEmailNoRegistrado noVisible">El Email no esta registrado</p>
+        <div class="iconoYTexto" id="grupo2">
+          <ion-icon name="lock"></ion-icon>
+          <input class="input" type="password" name="clave" id="clave" placeholder="Contraseña" required>
+          <img class="check noVisible" src="./svg/check.svg" alt="check">
+          <img class="nocheck noVisible" src="./svg/noCheck.svg" alt="nocheck">
+        </div>
+        <p class="aviso avisoClaveFormato noVisible">La contraseña debe tener minimo 4 caracteres</p>
+        <p class="aviso avisoClaveIncorrecta noVisible">La clave es incorrecta</p>
+        <div class="linkYBoton">
+          <a href="./HTML/recuperarClave.html">¿Olvidaste tu contraseña?</a>
+          <button type="submit" id="iniciarSesion">Iniciar Sesión</button>
+        </div>
+        <div class="cambio">
+          <p>¿No tienes una cuenta?</p>
+          <button type="button" class="btnCambio" id="btnCambioRegistro">Registrate</button>
+        </div>
+      </form>
+    </div>
+    <div class="formulario registro oculto">
+      <form class="formularioRegistroDeUsuario" id="formularioRegistroDeUsuario">
+        <h2>Registro de Usuario</h2>
+        <span class="mensaje">Ingrese sus datos para el registro</span>
+        <div class="iconoYTexto" id="grupo3">
+          <ion-icon name="person"></ion-icon>
+          <input class="input" type="text" name="nombre" id="nombre" placeholder="Nombre" required autofocus>
+          <img class="check noVisible" src="./svg/check.svg" alt="check">
+          <img class="nocheck noVisible" src="./svg/noCheck.svg" alt="nocheck">
+        </div>
+        <p class="aviso avisoNombreFormato noVisible">El nombre no puede tener menos de 3 caractereres</p>
+        <div class="iconoYTexto" id="grupo4">
+          <ion-icon name="mail"></ion-icon>
+          <input class="input" type="text" name="email2" id="email2" placeholder="Email" required>
+          <img class="check noVisible" src="./svg/check.svg" alt="check">
+          <img class="nocheck noVisible" src="./svg/noCheck.svg" alt="nocheck">
+        </div>
+        <p class="aviso avisoEmailFormato2 noVisible">El Email no tiene el formato correcto</p>
+        <div class="iconoYTexto" id="grupo5">
+          <ion-icon name="lock"></ion-icon>
+          <input class="input" type="password" name="clave2" id="clave2" placeholder="Contraseña" required>
+          <img class="check noVisible" src="./svg/check.svg" alt="check">
+          <img class="nocheck noVisible" src="./svg/noCheck.svg" alt="nocheck">
+        </div>
+        <p class="aviso avisoClaveFormato2 noVisible">La contraseña debe tener minimo 4 caracteres</p>
+        <div class="iconoYTexto" id="grupo6">
+          <ion-icon name="lock"></ion-icon>
+          <input class="input" type="password" name="clave3" id="clave3" placeholder="Repita la contraseña" required>
+          <img class="check noVisible" src="./svg/check.svg" alt="check">
+          <img class="nocheck noVisible" src="./svg/noCheck.svg" alt="nocheck">
+        </div>
+        <p class="aviso avisoClaveFormato3 noVisible">Las contraseñas deben ser iguales</p>
+        <button type="submit" id="registrarse">Registrarse</button>
+        <div class="cambio">
+            <p>¿Ya tienes una cuenta?</p>
+            <button type="button" class="btnCambio" id="btnCambioSesion">Iniciar Sesión</button>        
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="./SCRIPT/auth.js" defer></script>
+</body>
+</html>

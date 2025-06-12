@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo{
+  color: #16a34a;
+  font-weight: 700px;
+}
+.logo span{
+  color: #60a5fa;
+}
+.contenedor {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2{
+  font-size: 30px;
+}
+.formulario {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formulario.inicio {
+  opacity: 1;
+  visibility: visible;
+}
+.formulario.registro {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1);
+}
+.formulario.mostrar {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: scale(1) !important;
+}
+
+.formulario.oculto {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1);
+}
+
+
+form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 20px;
+
+}
+.mensaje{
+  text-align: center;
+  font-size: 12px;
+  margin-top: 15px;
+}
+.iconoYTexto{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    width: 400px;
+    height: 45px;
+    background-color: #EEEEEE;
+  }
+  /* .iconoYTexto:active{
+    border: 2px solid #3030db;
+  } */
+.linkYBoton{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 10px;
+}
+
+.iconoYTexto input{
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  font-size: 10px;
+}
+.aviso{
+  color: red;
+  font-size: 12px;
+}
+.registroDeUsuario a{
+  color: black;
+  font-size: 15px;
+}
+button{
+  width: 11rem;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3030db;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cambio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding:20px;
+  }
+.datoIncorrecto{
+  border: 2px solid red;
+}
+.datoCorrecto{
+  border: 2px solid green;
+}
+.noVisible{
+  display:none;
+}
+.visible{
+  display:block;
+}
