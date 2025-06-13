@@ -9,9 +9,9 @@ salir = document.getElementById("salir")
 
 salir.addEventListener('click', (e) => {
   e.preventDefault()
-  // localStorage.removeItem("usaurioActual")
-  // localStorage.removeItem("autenticado")
-  // window.location.href = "../index.html"
+  localStorage.removeItem("usaurioActual")
+  localStorage.removeItem("autenticado")
+  window.location.href = "../index.html"
   console.log(localStorage.getItem("usuarioActual"), localStorage.getItem("autenticado"))
 
 })
